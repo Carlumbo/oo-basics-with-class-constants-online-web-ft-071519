@@ -6,7 +6,9 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if !(BRANDS.include?(@brand))
+      #IF BRANDS does not (!) include @brand
       BRANDS << brand 
+      #place brand in side BRANDS 
     end
   end
 
